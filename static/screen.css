@@ -61,7 +61,7 @@ main, .transparent-layer {
 }
 
 main {
-    background: url("background.jpg");
+    background: url("background.jpg") no-repeat center;
     height: 100%;
 }
 
