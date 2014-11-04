@@ -4,10 +4,15 @@
     font-smoothing: antialiased;
 }
 
+.slick-si img {
+    max-width: 100%;
+}
+
 html, body {
     padding: 0;
     margin: 0;
     background: #444;
+    min-height: 100%;
 }
 
 h1, code, a {
@@ -30,7 +35,7 @@ header {
 }
 
 header input {
-    background: url("search_icon.png") no-repeat 96%;
+    background: url("../img/search_icon.png") no-repeat 96%;
     background-size: auto 80%;
     padding: 0.15em 1.85em 0.15em 0.45em;
     font-family: "Lato", Consolas, sans-serif;
@@ -44,7 +49,7 @@ header input:not(:hover) {
 }
 
 header input:hover {
-    border: 1px solid rgba(0, 0, 0, 1);
+    border: 1px solid rgba(140, 140, 140, 1);
     border-radius: 2px;
     transition: border 1.3s ease;
 }
@@ -89,8 +94,9 @@ nav a:hover {
 
 main {
     text-align: center;
-    background: url("background.jpg") no-repeat center;
-    padding-bottom: 3em;
+    min-height: 1000px;
+    background: url("../img/background.jpg") no-repeat center;
+    padding: 5em 0;
 }
 
 .noback {
@@ -137,7 +143,7 @@ main {
     display: block;
     max-width: 40em;
     padding: 2em;
-    margin: 0 auto;
+    margin: auto;
     background: white;
     font-family: "Lato", Consolas, sans-serif;
     border: 1.25em solid rgba(255, 255, 255, 0.3);
