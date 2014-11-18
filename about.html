@@ -1,65 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>ACM</title>
-    <meta charset="UTF-8">
-    <link href="static/font/lato.css" rel="stylesheet">
-    <link href="static/css/main.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="static/slick-1.3.13/slick/slick.css"/>
-    <script src="static/slick-1.3.13/slick/slick.min.js"></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="/">ACM@CU</a>
-            <a href="/about">ABOUT</a>
-            <a href="/members">MEMBERS</a>
-            <a href="/resources">RESOURCES</a>
-        </nav>
-        <section>
-            <input type="text">
-            <a href="www.facebook.com"><img src="static/img/facebook.png"></a>
-            <a href="www.twitter.com"><img src="static/img/twitter.png"></a>
-        </section>
-    </header>
-    
-    <main>
-        <div class="content slick-si">
-            <div><img src="static/img/ex1.jpg"></div>
-            <div><img src="static/img/ex2.jpg"></div>
-            <div><img src="static/img/ex3.jpg"></div>
-            <div><img src="static/img/ex4.jpg"></div>
-        </div>
-    </main>
-        
-    <footer>
-        <div class='flex spacebetween'>
-            <span class='blockchildren'>
-                <a href="/">CU Association for Computer Machinery</a>
-                <p>123 Main St. Boulder, CO 80303</p>
-                <a href="mailto:acm@colorado.edu">acm@colorado.edu</a>
-                <p>(303) 555-1234</p>
-            </span>
+<div class="content slick-si">
+    <div><img src="static/img/ex1.jpg"></div>
+    <div><img src="static/img/ex2.jpg"></div>
+    <div><img src="static/img/ex3.jpg"></div>
+    <div><img src="static/img/ex4.jpg"></div>
+</div>
 
-            <span class='blockchildren tright'>
-                <a href="www.colorado.edu">University of Colorado Boulder</a>
-                <p>© Regents of the University of Colorado</p>
-                <div>
-                    <a href="www.colorado.edu/about/legal.html">Legal &amp; Trademarks</a>
-                    <span> • </span>
-                    <a href="www.colorado.edu/privacy">Privacy</a>
-                </div>
-            </span>
-        </div>
-    </footer>
-    
-    <script>
-    $(function() {
-        $('.slick-si').slick({ adaptiveHeight: true });
-        console.log("y u no");
-    });
-    </script>
-    
-</body>
-</html>
+<script>
+$(function() {
+    $('.slick-si').slick({ adaptiveHeight: true });
+    console.log("y u no");
+});
+</script>

@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+.slick-si img {
+    max-width: 100%;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #444;
+    min-height: 100%;
+}
+
+h1, code, a {
+    text-decoration: none;
+    font-weight: 300;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Lato", Consolas, sans-serif;
+    font-size: 0.9em;
+    box-shadow: 0 2px 5px black;
+}
+
+header input {
+    background: url("../img/search_icon.png") no-repeat 96%;
+    background-size: auto 80%;
+    padding: 0.15em 1.85em 0.15em 0.45em;
+    font-family: "Lato", Consolas, sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+header input:not(:hover) {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 2px;
+}
+
+header input:hover {
+    border: 1px solid rgba(140, 140, 140, 1);
+    border-radius: 2px;
+    transition: border 1.3s ease;
+}
+
+header section {
+    display: inline-flex;
+    align-items: center;
+    justify-items: space-between;
+}
+
+header section a {
+    margin-bottom: -3px;
+}
+
+header img {
+    width: 1.5em;
+    margin-left: 0.4em;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    font-weight: 400;
+    color: #4d4e53;
+    margin: 0.5em 0.25em;
+    padding: 0.75em 0.25em;
+}
+
+nav a:first-child {
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #87CEEB;
+    transform: scale(1.025, 1.025) translateZ(0px);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+main {
+    text-align: center;
+    min-height: 1000px;
+    background: url("../img/background.jpg") no-repeat center;
+    padding: 5em 0;
+}
+
+.noback {
+    padding: 2em 0 1.25em 0;
+    font-family: "Lato", Consolas, sans-serif;  
+    font-size: 4em;
+    font-weight: 400;
+}
+
+.huge {
+    text-shadow: black 2px 2px 8px;
+    color: white;
+    margin: 0;
+}
+
+#join {
+    outline: none;
+    padding: 1em 1.25em;
+    font-family: "Lato", Consolas, sans-serif;  
+    font-size: 0.35em;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.75);
+    border: 0 solid transparent;
+    border-radius: 4px;
+}
+
+#join:hover:not(:active) {
+    transform: scale(1.05, 1.05) translateZ(0px);
+    -webkit-animation: glow 1.3s ease infinite alternate-reverse;
+    animation: glow 1.3s ease infinite alternate-reverse;
+}
+
+#join:active {
+    background: rgba(255, 255, 255, 0.9);
+    transform: scale(1.01, 1.01) translateZ(0px);
+}
+
+.transparent-layer {
+    padding: 1.25em;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.content {
+    display: block;
+    max-width: 40em;
+    padding: 2em;
+    margin: auto;
+    background: white;
+    font-family: "Lato", Consolas, sans-serif;
+    border: 1.25em solid rgba(255, 255, 255, 0.3);
+    background-clip: padding-box;
+}
+
+.content p {
+    max-width: 40em;
+    text-align: justify;
+    text-justify: kashida;
+}
+
+footer {
+    padding: 2em 15%;
+    background: #444;
+    font-family: Arial;
+    font-size: 0.8em;
+    color: #fff;
+    border-top: 2px solid black;
+}
+
+footer a {
+    color: #CFB53B;
+}
+
+footer a:not(:hover) {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.spacebetween {
+    justify-content: space-between;
+}
+
+.blockchildren > * {
+    display: block;
+}
+
+.tright {
+    text-align: right;
+}
+
+@-webkit-keyframes glow {
+    from { box-shadow: 0 0 10px transparent; }
+    to   { box-shadow: 0 0 10px #87CEEB; }
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px transparent; }
+    to   { box-shadow: 0 0 10px #87CEEB; }
+}
+
+@-webkit-keyframes lels {
+    0% {   transform: translateY(0) }
+    50% {  transform: translateY(5px) }    
+    100% { transform: translateY(0) }
+}
+
+@keyframes lels {
+    0% {   transform: translateY(0) }
+    50% {  transform: translateY(5px) }    
+    100% { transform: translateY(0) }
+}
