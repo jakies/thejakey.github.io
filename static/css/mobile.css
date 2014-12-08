@@ -57,7 +57,7 @@ header input:hover {
 header section {
     display: inline-flex;
     align-items: center;
-    justify-items: space-between;
+    justify-content: space-between;
 }
 
 header section a {
