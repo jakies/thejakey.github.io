@@ -10,7 +10,17 @@ layout: default
 <div class="content">
     <h1>OUR CHAPTER</h1>
     <hr color="black"/>
+    <p id="zz"></p>
     <p>Our chapter is chartered by the National ACM, and is an official student group of the University of Colorado at Boulder. It serves not only to carry out the mission of the national organization, but also to provide a student community for those interested in computing - particularly CS and ECE majors, but any student of CU Boulder is welcome to join our activities and become a member. (For more about becoming a member, go to the Join section of the site) 
 
 If you'd like to receive info on when the chapter is holding events, sign up for our mailing list.</p>
 </div>
+
+<script>
+    var now = new Date();
+    var fDate = [now.getMonth()+1, now.getDate(), now.getFullYear()].join('/');
+    var link = document.createElement('a');
+    link.textContent = "Today's CU Events";
+    link.href = "http://events.colorado.edu/EventList.aspx?fromdate=" + fDate + "&todate=" + fDate;
+    document.getElementById('zz').innerHTML = link;
+</script>
